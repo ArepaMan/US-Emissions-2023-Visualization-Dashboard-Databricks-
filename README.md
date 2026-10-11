@@ -28,7 +28,14 @@ Do not commit large raw files here unless you have redistribution rights; load f
 
 ## SQL
 
-Add exported dataset queries under `sql/` (one file per Lakeview visualization). In the dashboard editor: open each tile → **Data** / query panel → copy SQL into `sql/<tile-name>.sql`.
+Lakeview dataset queries (one file per dashboard tile):
+
+| File | Visualization | Lakeview dataset name |
+|------|----------------|------------------------|
+| [`sql/01_map_emissions_for_usa.sql`](sql/01_map_emissions_for_usa.sql) | Map — **Emissions for USA** | Global Emissions Coordinates and Carbon Output Data |
+| [`sql/02_scatter_emission_vs_population.sql`](sql/02_scatter_emission_vs_population.sql) | Scatter — **Emission vs Population** | Emissions per Person |
+| [`sql/03_donut_top_10_states_emissions.sql`](sql/03_donut_top_10_states_emissions.sql) | Donut — **Top 10 states (~51% of US emissions)** | Total Emissions per State |
+| [`sql/04_bar_top_10_counties_emissions.sql`](sql/04_bar_top_10_counties_emissions.sql) | Bar — **Top 10 counties by mTon CO₂e** | Total Emissions per County |
 
 ## Portfolio
 
